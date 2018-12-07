@@ -397,7 +397,7 @@ define([
         // I'm not sure why or how.
         window.onbeforeunload = function (e) {
             // TODO: Make killing the kernel configurable.
-            var kill_kernel = false;
+            var kill_kernel = true;
             if (kill_kernel) {
                 that.session.delete();
             }
